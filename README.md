@@ -1,4 +1,5 @@
 # Connecting to the bangle.js from the command-line
+
 The [suggested mode](https://www.espruino.com/Bangle.js+Development) of development for the bangle.js 2 is the espruino web IDE - but I tend to dislike developing browser and like the command-line.
 
 You can, instead, use espruino from the command-line to bring up a shell to your bangle device.
@@ -14,3 +15,10 @@ npx espruino -d Bangle.js
 ```
 
 This will bring up a REPL with tab completion. The Bangle object represents your watch.
+
+## Running a script
+You can write code in a script and send the entire script to the bangle with:
+
+```
+espruino -d Bangle.js script.js
+```
